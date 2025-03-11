@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Delius";
+  src: url("./fonts/Delius-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Kaushan Script";
+  src: url("./fonts/KaushanScript-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Switzer";
+  src: url("./fonts/Switzer.woff2");
+}
+
+@font-face {
+  font-family: "Merienda";
+  src: url("./fonts/Merienda.woff2");
+}
+
+.showcase {
+  background: url("./assets/kunafa-showcase.avif") no-repeat center center/cover;
+}
+
+.custom-swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-eden);
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.custom-swiper .swiper-pagination-bullet-active {
+  background-color: var(--color-leandro);
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+body::selection {
+  background-color: var(--color-orange-moyen);
+}
+
+@theme {
+  --font-delius: "Delius";
+  --font-switzer: "Switzer";
+  --font-kaushan-script: "Kaushan Script";
+  --font-merienda: "Merienda";
+
+  --color-leandro: #3d1c04;
+  --color-orange-moyen: #f9bd14;
+  --color-blond: #fff2c6;
+  --color-old-lace: #f9f5eb;
+  --color-eden: #5c402a;
+}

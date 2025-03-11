@@ -1,0 +1,43 @@
+export default function FooterLinkSection({ title }) {
+  return (
+    <div className="h-full w-full grid grid-cols-2 gap-4 px-4">
+      <div className="w-full flex flex-col gap-1">
+        <h1 className=" font-medium uppercase text-old-lace/80">Visit us</h1>
+        <div className="flex flex-col gap-1">
+          <h1 className="text-old-lace/80">
+            Location :{" "}
+            <a className="text-old-lace hover:text-orange-moyen" href="#">
+              Near KNS College, No 15/3,4, Thirumenahalli, |Jakkur Post,
+              Bengaluru Urban, Karnataka, 560064
+            </a>
+          </h1>
+          <h1 className="text-old-lace/80">
+            Office Timings :{" "}
+            <a className="text-old-lace hover:text-orange-moyen" href="#">
+              Monday - Saturday - 10AM to 5PM
+            </a>
+          </h1>
+        </div>
+      </div>
+      <div className="w-full flex flex-col gap-1">
+        <h1 className="font-switzer font-medium uppercase text-old-lace/80">
+          Contact us
+        </h1>
+        <div>
+          <h1 className="text-old-lace/80">
+            Phone:{" "}
+            <a className="text-old-lace hover:text-orange-moyen" href="#">
+              6361156364
+            </a>
+          </h1>
+          <h1 className="text-old-lace/80">
+            Mail:{" "}
+            <a className="text-old-lace hover:text-orange-moyen" href="#">
+              info@kunafaworld.com
+            </a>
+          </h1>
+        </div>
+      </div>
+    </div>
+  );
+}
