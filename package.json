@@ -16,7 +16,9 @@
     "lenis": "^1.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-router-dom": "^7.3.0",
     "swiper": "^11.2.5",
+    "tailwind-merge": "^3.0.2",
     "tailwindcss": "^4.0.12"
   },
   "devDependencies": {

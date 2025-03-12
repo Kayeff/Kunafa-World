@@ -1,4 +1,5 @@
 import kunafa from "../assets/kunafa.avif";
+import Button from "./Button";
 
 export default function Hero() {
   return (
@@ -28,12 +29,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <a
-              href="#"
-              className="px-10 py-3 cursor-pointer bg-leandro text-old-lace hover:bg-transparent hover:text-leandro border border-transparent hover:border-leandro duration-300 font-switzer rounded-full"
-            >
-              About us
-            </a>
+            <Button href={"#"} title={"About us"} />
           </div>
         </div>
       </div>

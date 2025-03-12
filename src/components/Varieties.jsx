@@ -1,4 +1,5 @@
 import { variety } from "../variety";
+import Button from "./Button";
 import Item from "./Item";
 
 export default function Varieties() {
@@ -14,12 +15,11 @@ export default function Varieties() {
           ))}
         </div>
         <div className="w-full flex items-center justify-center p-2">
-          <a
-            href="#"
-            className="px-10 py-3 cursor-pointer bg-old-lace text-leandro hover:bg-transparent hover:text-old-lace border border-transparent hover:border-old-lace duration-300 font-switzer rounded-full font-medium text-lg"
-          >
-            Menu
-          </a>
+          <Button
+            css="bg-old-lace text-leandro hover:bg-transparent hover:text-old-lace border border-transparent hover:border-old-lace font-medium"
+            href={"#"}
+            title={"Menu"}
+          />
         </div>
       </div>
     </section>
