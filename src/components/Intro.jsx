@@ -1,7 +1,7 @@
 import kunafa from "../assets/kunafa.avif";
 import Button from "./Button";
 
-export default function Hero() {
+export default function Intro() {
   return (
     <section className="w-full grid grid-cols-2 text-old-lace">
       <div className="w-full h-full flex items-center justify-center flex-col font-switzer gap-4 bg-old-lace text-leandro p-20">

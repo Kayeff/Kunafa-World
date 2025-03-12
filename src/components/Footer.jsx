@@ -19,8 +19,8 @@ function SocialLink({ href, Icon }) {
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-leandro text-old-lace font-switzer p-10 flex flex-col gap-4">
-      <div className="w-full grid grid-cols-2">
+    <footer className="w-full bg-leandro text-old-lace font-switzer flex items-center justify-between flex-col gap-8 p-8">
+      <div className="w-full grid grid-cols-2 p-2">
         <div className="w-full">
           <img className="object-cover" src={logo} alt="" />
         </div>

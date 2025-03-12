@@ -5,10 +5,10 @@ import NavbarLinks from "./NavbarLinks";
 export default function Navbar() {
   return (
     <nav className="sticky top-0 left-0 w-full flex items-center justify-center text-old-lace bg-leandro z-40">
-      <div className="w-[80%] flex justify-between items-center relative p-7">
+      <div className="w-[90%] flex justify-between items-center relative p-7">
         <div className="flex items-center justify-center gap-5">
           {links
-            .filter((link) => link.id < 4)
+            .filter((link) => link.id < 5)
             .map((link) => (
               <NavbarLinks link={link} key={`link-${link.id}`} />
             ))}
@@ -21,7 +21,7 @@ export default function Navbar() {
         />
         <div className="flex items-center justify-center gap-5">
           {links
-            .filter((link) => link.id >= 4)
+            .filter((link) => link.id >= 5)
             .map((link) => (
               <NavbarLinks link={link} key={`link-${link.id}`} />
             ))}

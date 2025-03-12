@@ -1,11 +1,16 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ReactLenis } from "lenis/react";
-import Varieties from "./components/Varieties";
-import Testimonials from "./components/Testimonials";
+
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Offers from "./components/Offers";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Menu from "./pages/Menu";
+import Store from "./pages/Store";
+import StoreLocator from "./pages/StoreLocator";
+import Franchise from "./pages/Franchise";
+import Contact from "./pages/Contact";
 
 export default function App() {
   return (
@@ -15,15 +20,21 @@ export default function App() {
         autoRaf: true,
       }}
     >
-      <main className="w-full min-h-screen bg-leandro relative">
+      <Router>
         <Navbar />
-        <Offers />
-        <Hero />
-        <About />
-        <Varieties />
-        <Testimonials />
+        <main className="w-full min-h-screen bg-leandro relative">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/store" element={<Store />} />
+            <Route path="/store-locator" element={<StoreLocator />} />
+            <Route path="/franchise" element={<Franchise />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
         <Footer />
-      </main>
+      </Router>
     </ReactLenis>
   );
 }
