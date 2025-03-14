@@ -21,7 +21,11 @@
 }
 
 .showcase {
-  background: url("./assets/kunafa-showcase.avif") no-repeat center center/cover;
+  background: url("./assets/cities.png") no-repeat center center/cover;
+}
+
+.about {
+  background: url("./assets/Our-Story.png") no-repeat center center/cover;
 }
 
 .custom-swiper .swiper-pagination-bullet {

@@ -26,6 +26,7 @@ export default function Form() {
           <input
             className="outline-none border border-leandro/20 p-2 font-switzer"
             type="tel"
+            pattern="[0-9]{10}"
             placeholder="+91"
           />
         </label>
